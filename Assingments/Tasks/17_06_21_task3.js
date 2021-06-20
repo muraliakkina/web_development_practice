@@ -1,3 +1,4 @@
+// To get the data from the API and accessing the countryName, region,subRegion and population
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://restcountries.eu/rest/v2/all");
 xhr.onload = function () {
