@@ -1,3 +1,4 @@
+// To get the data from the API and accessing the flags of the countries
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://restcountries.eu/rest/v2/all");
 xhr.onload = function () {
