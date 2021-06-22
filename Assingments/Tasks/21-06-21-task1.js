@@ -53,5 +53,32 @@ var findmedian = function(arg1,arg2){
 }
 console.log(findmedian(array1,array2))
 
+//Sum of all numbers in an Array
+var a = [1,2,3,4,5,6,7,8,9,10];
+var totalsum = 0;
+var sum = function(xy){
+    for(let i of a){
+        totalsum += i
+    }
+    console.log(totalsum)
+}
+sum(a)
+
+// To Convert all the strings to title caps in a string array
+var problem2 = 'i am using javascript'
+problem2 = problem2.split(' ')
+var bb = []
+var titleCase = function (arg2){
+    for(let i of arg2){
+        let j = i[0];
+        let k = j.toUpperCase();
+        i = i.replace(j,k)
+        bb.push(i)
+
+    }
+    console.log(bb)
+}
+titleCase(problem2)
+
 
 
