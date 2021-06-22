@@ -116,4 +116,52 @@ var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
 var max = findMax(ar);
 console.log('Max:', max);
 
+// 6. Write a function `powersOfTwo` which will return list of all powers of 2 from 0 to n (where n is an exponent).
+function powersOfTwo(n){
+  var i = 0;
+  var res = [];
+  while(i<=n){
+    res.push(Math.pow(2,i))
+    i++
+  }
+  return res;
+}
+console.log(powersOfTwo(2))
+
+// 7. Create a function that receives an array of numbers and returns an array containing only the positive numbers
+function getPositives(ar)
+{
+ // your code here
+ var empty = []
+ for(let i of ar){
+   if(i>0){
+     empty.push(i)
+   }
+ }
+ return empty
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var ar2 = getPositives(ar);
+console.log(ar2);
+
+
+// 8. Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
+var arr = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var ar2 = function countPositivesSumNegatives(arr) {
+  var count = 0;
+  var sum = 0;
+  var ar = [];
+  for(let i of arr){
+    if(i<0){
+      sum += i;
+    }else{
+      count++;
+    }
+  }
+  ar.push(count)
+  ar.push(sum)
+  return ar
+}
+console.log(ar2(arr));
+
 
