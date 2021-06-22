@@ -76,3 +76,44 @@ function isPrime(n)
  }
  return true;
 }
+
+// 5. Find the maximum number in an array of numbers
+  
+  for(i=0;i<ar.length;i++){
+    let dumy = [];
+    let j = 0;
+    while(ar.length>j){
+      if(ar[i]>ar[j]){
+        dumy.push(ar[j])
+      }
+      j++;
+    }
+    if(dumy.length ==ar.length-1 ){
+      return ar[i]
+    }
+  }
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var max = findMax(ar);
+console.log('Max:', max);
+function findMax(ar){
+  // your code here
+  for(i=0;i<ar.length;i++){
+    let dumy = [];
+    let j = 0;
+    while(ar.length>j){
+      if(ar[i]>ar[j]){
+        dumy.push(ar[j])
+      }
+      j++;
+    }
+    if(dumy.length ==ar.length-1 ){
+      return ar[i]
+    }
+  }
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var max = findMax(ar);
+console.log('Max:', max);
+
+
