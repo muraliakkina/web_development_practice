@@ -80,5 +80,30 @@ var titleCase = function (arg2){
 }
 titleCase(problem2)
 
+// Prime checking
+var arra = [1,2,3,4,5,6,7,8,9]
+var prime = []
+function primeCheck (arra){
+  for(let i of arra){
+    if(i == 2){
+      prime.push(i)
+    }else if(i<9&&i>2&&i%2!=0){
+      prime.push(i)
+    }else if(i>=9&&i%2!=0&&i%3!=0&&i%5!=0&&i%7!=0){
+      prime.push(i);
+    }
+  }
+  return prime;
+}
+console.log(primeCheck(arra))
 
 
+// Rotate an array k times.
+var arra = [1,2,3,4,5,6,7,8,9]
+var rotate = function (arr,k){
+  for(let i=k;i>0;i--){
+    arr.unshift(arr.pop())
+  }
+  console.log(arr)
+}
+rotate(arra,3)
