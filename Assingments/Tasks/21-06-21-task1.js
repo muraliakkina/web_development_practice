@@ -8,7 +8,7 @@ var x = function (arg1){
             b.push(i)
         }
     }
-    //console.log(b)   
+    console.log(b)   
 }
 x(a)
 
