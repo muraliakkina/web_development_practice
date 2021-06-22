@@ -29,3 +29,50 @@ function reverseString(s)
    var reverse = array1.reverse()
    return reverse.join("")
 }
+
+// 3. Create a function that will return in an array the first “nPrimes” prime numbers greater than a particular number “startAt”
+console.log(getPrimes(10, 100));
+function getPrimes(nPrimes, startAt)
+{
+  // your code here
+ var prime = true;
+ var tenprime = [];
+ while(tenprime.length<nPrimes){
+   if(startAt%2!==0&&startAt%3!==0&&startAt%5!==0&&startAt%7!==0&&startAt%11!=0){
+     tenprime.push(startAt)
+   }
+   startAt++
+ }
+ return tenprime;
+}
+
+// 4. Print the first 100 prime numbers
+printPrimes(100);
+// Function prints the first nPrimes numbers
+function printPrimes(nPrimes)
+{
+ var n = 0;
+ 
+ while(n < nPrimes)
+ {
+ if (isPrime(n))
+ {
+ console.log(n);
+ }
+ n++;
+ }
+}// Returns true if a number is prime
+function isPrime(n)
+{
+ // your code here
+ if(n<2){
+   return false
+ }else{
+  for(j=2;j<n;j++){
+    if(n%j==0){
+      return false
+    }
+  }
+ }
+ return true;
+}
