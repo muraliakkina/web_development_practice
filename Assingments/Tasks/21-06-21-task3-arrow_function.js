@@ -66,3 +66,33 @@ var titleCase = (arg2)=>{
     console.log(bb)
 }
 titleCase(problem2)
+
+// Prime checking
+var arra = [1,2,3,4,5,6,7,8,9]
+var prime = []
+var primeCheck = (arra)=>{
+  for(let i of arra){
+    if(i == 2){
+      prime.push(i)
+    }else if(i<9&&i>2&&i%2!=0){
+      prime.push(i)
+    }else if(i>=9&&i%2!=0&&i%3!=0&&i%5!=0&&i%7!=0){
+      prime.push(i);
+    }
+  }
+  return prime;
+}
+console.log(primeCheck(arra))
+
+// To print Odd number in array
+var a = [1,2,3,4,5,6,7,8,9,10];
+var b = [];
+var x = (arg1)=>{
+    for(let i of arg1){
+        if(i%2!==0){
+            b.push(i)
+        }
+    }
+    console.log(b)   
+}
+x(a)
