@@ -165,3 +165,100 @@ var ar2 = function countPositivesSumNegatives(arr) {
 console.log(ar2(arr));
 
 
+// 9.Write a function called “getOpposite”. Given a number, return its opposite
+var num = -5;
+function getOpposite(num) {
+  if(num>0){
+    return -num;
+  }else if(num<0){
+    return -num;
+  }else{
+    return 0
+  }
+}
+var result = getOpposite(num)
+console.log(result)
+
+// 10. Function to convert minutes to seconds.
+var min = 5;
+function toSeconds(min) {
+  return min*60
+}
+var secs = toSeconds(min)
+console.log(secs)
+
+// 11. Function to convert a string to numner
+var mystr = "5";
+function toInteger(mystr) {
+  return +mystr;
+}
+var myint = toInteger(mystr)
+console.log(myint)
+
+// 12. Function to increment the number
+var myint = 0;
+function nextNumber(myint) {
+ return myint+1;
+}
+var myNextint = nextNumber(myint)
+console.log(myNextint)
+
+// 13. Function to return first element of an array
+var arr = [1, 2, 3];
+function getFirstElement(arr) {
+ return arr[0]
+}
+var data = getFirstElement(arr)
+console.log(data);
+
+// 14. Function to convert hours to numbers
+var arr = [1, 2, 3];
+function hourToSeconds(arr) {
+ for(let i of arr){
+  return i*60*60;
+ }
+}
+var data = hourToSeconds(arr);
+console.log(data)
+
+// 15. Function to calculate perimeter
+function findPerimeter(num1,num2) {
+ return num1+num2;
+}
+var peri = findPerimeter(6,7)
+console.log(peri)
+
+
+// 16. Function to check the sum of two numbers is less than 100
+function lessThan100(num1,num2) {
+ if((num1+num2)<100){
+  return true;
+ }else{
+  return false;
+ } 
+}
+var res = lessThan100(22,15)
+console.log(res)
+
+// 17. Function to return remainder
+function remainder(num1,num2) {
+ return num2%num1;
+}
+var res = remainder(1,3)
+console.log(res);
+
+
+// 18. function that returns the total number of legs of all the animals.
+function CountAnimals(tur,horse,pigs) {
+ return tur*2+horse*4+pigs*4
+}
+var legs = CountAnimals(2,3,5)
+console.log(legs)
+
+// 19. function that returns the number of frames shown in a given number of minutes for a certain FPS.
+function frames(num1,num2) {
+ return num1*num2*60;
+}
+var fps = frames(1,2)
+console.log(fps)
+
