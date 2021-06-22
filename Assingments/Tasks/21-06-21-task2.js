@@ -262,3 +262,65 @@ function frames(num1,num2) {
 var fps = frames(1,2)
 console.log(fps)
 
+// 20. function that returns true if an integer is evenly divisible by 5, and false otherwise.
+function divisibleByFive(num1) {
+ if(num1%5 ==0){
+  return true;
+ }else{
+  return false;
+ }
+}
+var divisible = divisibleByFive(5)
+console.log(divisible)
+
+
+// 21. Function to check number is even or not
+function isEven(num){
+ // your code here
+ if(Number.isInteger(num)){
+  if(num%2 ==0){
+   return true;
+  }else{
+   return false;
+  }
+ }else{
+  return -1;
+ }
+}
+var even = isEven(5)
+console.log(even);
+
+// 22. Function to check the number is odd or not
+function areBothOdd(num1, num2){
+ // your code here
+ if(num1%2!==0&&num2%2!==0){
+  return true;
+ }
+ else{
+  return false;
+ }
+}
+console.log(areBothOdd(1,4))
+
+// 23. Function to concatenate strings
+function getFullName(firstName, lastName){
+ // your code here
+ console.log(firstName+lastName);
+}
+getFullName('guvi','geek')
+
+
+//24. function to check the length of strings
+function isSameLength(word1, word2){
+ // your code here
+ if(word1.length == word2.length){
+  return true;
+ }
+ else{
+  return false;
+ }
+}
+console.log(isSameLength('guvi','geek'))
+
+
+
