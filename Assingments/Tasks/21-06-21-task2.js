@@ -323,4 +323,42 @@ function isSameLength(word1, word2){
 console.log(isSameLength('guvi','geek'))
 
 
+// 25. Function to calculate distance between two points
+console.log(getDistance(100, 100, 400, 300));
+function getDistance(x1, y1, x2, y2)
+{
+ let x = (x2-x1)*(x2-x1);
+ let y = (y2-y1)*(y2-y1);
+ return Math.sqrt(x+y);
+}
 
+// 26. Function to get nth element
+function getNthElement(array,n){
+ // your code here
+ return array[n];
+}
+console.log(getNthElement(array,n))
+
+// 27. function to get last element of an array
+function getLastElement(array){
+ // your code here
+ return array[array.length-1]
+}
+console.log(getLastElement(array))
+
+// 28. function to get key value
+var obj = {'mykey': 'value'};
+function getProperty(obj, _key) {
+  // your code here
+  console.log(obj.mykey);
+}
+getProperty(obj,'mykey')
+
+// 29. function to add a property
+var obj = {mykey: 'value'};
+function addProperty(obj, key){
+  // your code here}
+  obj.mykey = true
+  console.log(obj)
+}
+addProperty(obj,'mykey')
