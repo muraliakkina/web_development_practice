@@ -1,4 +1,4 @@
-//Create a function that will merge two arrays and return the result as a new array
+// 1. Create a function that will merge two arrays and return the result as a new array
 var ar1 = [1, 2, 3];
 var ar2 = [4, 5, 6];
 var ar = mergeArrays(ar1, ar2);
@@ -18,3 +18,14 @@ for(let el of ar1)
  return result;
 }
 
+
+// 2. Reverse a String
+var s = reverseString("JavaScript");
+console.log(s);
+function reverseString(s)
+{
+   // your code here
+   var array1 = s.split("")
+   var reverse = array1.reverse()
+   return reverse.join("")
+}
