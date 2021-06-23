@@ -107,3 +107,11 @@ var rotate = function (arr,k){
   console.log(arr)
 }
 rotate(arra,3)
+
+// function to remove duplicate elements
+var arra = [1,2,2,3,3,3,4,5,5,6,7,7,8,9];
+var unique = function (){
+    var newarray = [...new Set(arra)];
+    console.log(newarray);
+}
+unique(arra)
