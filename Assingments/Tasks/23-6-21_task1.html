@@ -1,0 +1,207 @@
+<!-- 1. Fix the below to alert Guvi geek -->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+    let admin,fname; 
+    fname = "Guvi";
+    lname = "geek"
+    admin = fname+lname;
+    alert( admin );
+ </script>
+</body>
+</html>
+
+
+
+<!-- 2. Fix the below to alert hello Guvi geek-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+     let fname=10.5; 
+     fname = "Guvi";
+     lname = "geek";
+     let name = fname+lname;
+     alert('Hello'+ ' ' + name);
+ </script>
+</body>
+</html>
+
+<!-- 3. Fix the below to alert sum of two numbers-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+    let a = prompt("First number?");
+    let b = prompt("Second number?");
+    alert(+a + +b);
+ </script>
+</body>
+</html>
+
+
+<!-- 4. Explain Why the Code is blasted and how to diffuse it and get “Diffused”.-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+    var a = 2 > 12;//Since the numbers are in strings the code is blasted. if we convert it to numbers then the code is diffused
+    if (a) {
+        console.log("Code is Blasted")
+    }
+    else
+    {
+        console.log("Diffused") 
+    }
+ </script>
+</body>
+</html>
+
+<!-- 5. How to get the success in console.-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+    let a = prompt("Enter a number?");
+    a = false
+    //Don't modify any code below this. a is always true.to get 'success' we need to set a value to false
+    if (a) {
+        console.log( 'OMG it works for any number inc 0' );
+    }
+    else
+    {
+        console.log( "Success" );
+    }
+ </script>
+</body>
+</html>
+
+
+<!-- 6. How to get the correct score in console.-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+let value = prompt('How many runs you scored in this ball');
+if (+value === 4) {
+      console.log("You hit a Four");
+} else if (+value === 6) {
+      console.log("You hit a Six");
+} else if (+value === 1) {
+      console.log("You scored "+value+' run');
+} else {
+    console.log("You scored "+value+' runs');
+}
+ </script>
+</body>
+</html>
+
+
+<!-- 7. Fix the code to welcome the Employee-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+let login = 'Employee';
+let message = (login == 'Employee') ?"Welcome" : (login == 'Director') ? 'Greetings' :
+(login == '') ? 'No login' :'';
+console.log(message);
+ </script>
+</body>
+</html>
+
+
+<!-- 8. Fix the code to welcome the boss-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+// You cant change the value of the msg
+let message;if (null || 2 || undefined )
+{
+ let message = "welcome boss";
+ console.log(message);
+}
+else
+{
+ let message = "Go away";
+ console.log(message);
+} 
+ </script>
+</body>
+</html>
+
+
+<!--9. Fix the coe to welcome boss-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+let message;
+let lock;
+//Dont change any code below this 
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+  console.log(message);
+ </script>
+</body>
+</html>
+
+<!-- 10. Fix the code to welcome the boss-->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+let message;
+let lock ;
+//Dont change any code below this
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+ </script>
+</body>
+</html>
+
+<!--- 11. change the code to print 3 2 1 -->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+//You can change only 2 characters
+let i = 4;
+while (i>1) {
+    console.log( --i );
+}
+ </script>
+</body>
+</html>
+
+<!-- 12. Change the code to print 1 to 10 in 4 lines -->
+<!DOCTYPE html>
+<html>
+<body>
+ <script >
+let num = 1
+console.log(num,num+1,num+2,num+3)
+num += 1
+console.log(num+3,num+4,num+5)
+num += 1
+console.log(num+5,num+6)
+num += 1
+console.log(num+6)
+ </script>
+</body>
+</html>
