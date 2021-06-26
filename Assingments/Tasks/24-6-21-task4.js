@@ -4,7 +4,7 @@ class UBer{
         this.fareperKM = fareperKM 
     }
     calculation(){
-        console.log('The Price for the Trip is'+' ' + this.distanceinKM*this.fareperKM);
+        console.log('The Price for the Trip is ' + this.distanceinKM*this.fareperKM);
     }
 }
 var price = new UBer(10,4);
