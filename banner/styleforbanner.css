@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+.container{
+    height: 100vh;
+}
+.left{
+    float: left;
+    width: 50%;
+    font-family: 'Noto Serif', serif;
+}
+.right{
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    border-left: 3px dashed darkgray;
+    margin-top: -92%;
+}
+.heading{
+    text-align: center;
+    font-size: 4vmax;    
+    color: #25ABBE;
+    padding: 2px;
+}
+.text1{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    color: darkgray;
+    font-weight: bold;
+}
+.bluetitle{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.heading2{
+    color: #315A71;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    margin-left: 50px;
+    font-size: 3vmax;
+}
+.text2{
+    color: #1DAFC2;
+    margin-left: 50px;
+    font-weight: bold;
+}
+.cupcake{
+    margin-left: 60%;
+    margin-top: -15%;
+}
+.popcorn{
+    margin-left: 50px;
+}
+.heading3{
+    color: #315A71;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 60px;
+    font-weight: 900;
+    font-size: 3vmax;
+}
+.text3{
+    color: #1DAFC2;
+    margin-left: 12%;
+    font-weight: bold;
+}
+.capture1{
+    margin-left: 35%;
+    margin-top: -30%;
+
+}
+span{
+    color: #F0CB48;
+}
+.headr1{
+    color: #315A71;
+    font-family: 'Open Sans', sans-serif;   
+    font-weight: 900;
+    font-size: 3vmax;
+    margin-left: 7%;
+    margin-top: 1%;
+}
