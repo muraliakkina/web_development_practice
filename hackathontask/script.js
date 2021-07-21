@@ -99,7 +99,7 @@ function userLoading(details) {
       web.innerText = element.website_url;
       userContainer.append(web);
     } else {
-      element.website_url = "Not Specified";
+      element.website_url = "NA";
       web.innerText = element.website_url;
       userContainer.append(web);
     }
@@ -108,7 +108,7 @@ function userLoading(details) {
       mobile.innerText = element.phone;
       userContainer.append(mobile);
     } else {
-      element.phone = "Not Specified";
+      element.phone = "NA";
       mobile.innerText = element.phone;
       userContainer.append(mobile);
     }
