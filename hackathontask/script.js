@@ -1,4 +1,4 @@
-async function dataFetch() {
+async function dataFetch() { // function to fetch the api data
   let data = await fetch("https://api.openbrewerydb.org/breweries", {
     method: "GET"
   });
@@ -8,11 +8,12 @@ async function dataFetch() {
 
 dataFetch();
 
-function userLoading(details) {
+function userLoading(details) { // function to load the api data after fetching
   var conatiner = document.createElement("div");
   conatiner.className = "conatiner";
-  const heading = document.createElement("div");
-  heading.className = "mini-container heading-style";
+ 
+  const heading = document.createElement("div"); // creating the heading div for the headings 
+  heading.className = "mini-container heading-style"; 
   const headingName = document.createElement("div");
   headingName.innerText = "NAME";
   heading.append(headingName);
@@ -32,10 +33,10 @@ function userLoading(details) {
   const headingMobile = document.createElement("div");
   headingMobile.innerText = "PHONE NO";
   heading.append(headingMobile);
-  conatiner.append(heading);
+  conatiner.append(heading); // appending the heading div to container div
 
-  details.forEach((element) => {
-    const userContainer = document.createElement("div");
+  details.forEach((element) => { // foreach loop to access the every element in the data
+    const userContainer = document.createElement("div"); // creating the api data div for every element
     userContainer.className = "mini-container";
     const name = document.createElement("div");
     name.innerText = element.name;
@@ -112,7 +113,7 @@ function userLoading(details) {
       mobile.innerText = element.phone;
       userContainer.append(mobile);
     }
-    conatiner.append(userContainer);
-  });
-  document.body.append(conatiner);
+    conatiner.append(userContainer); // appending userContainer div to the main container div
+  }); // end of foreach loop
+  document.body.append(conatiner); // appending  userContainer div element to the main container div
 }
