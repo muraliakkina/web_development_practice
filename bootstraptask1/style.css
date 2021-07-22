@@ -1,6 +1,7 @@
 .nav-design{
     background-color: #1B1C1D;
     padding-left: 10%;
+    
 }
 .row1-heading{
     background-color:#1B1C1D;
@@ -63,4 +64,61 @@
 }
 .cards-alignment{
     margin-left: 25%;
+}
+
+.line1{
+    width: 40%;
+    float: left;
+}
+.line2{
+    width: 40%;
+    float: right;
+}
+.line3{
+    width: 25%;
+    float: left;
+}
+.line4{
+    width: 25%;
+    float: right;
+}
+.line5{
+    width: 25%;
+    float: left;
+}
+.line6{
+    width: 20%;
+    float: right;
+}
+.poem{
+    text-align: center;
+}
+.poetry{
+    text-align: center;
+}
+@media (max-width: 500px){
+    .line3{
+        width: 10%;
+        float: left;
+    }
+    .line4{
+        width: 10%;
+        float: right;
+    }
+    .line5{
+        width: 10%;
+        float: left;
+    }
+    .line6{
+        width: 10%;
+        float: right;
+    }
+}
+.footer{
+    background-color: #1B1C1D;
+    color: aliceblue;
+    padding: 4%;
+}
+.margin{
+    border-left: 1px solid aliceblue;
 }
