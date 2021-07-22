@@ -14,6 +14,7 @@ body {
   word-wrap: break-word;
   word-break: break-all;
   border: 1px solid black;
+  border-radius: 10px;
   text-align: center;
   align-items: center;
   background-image: linear-gradient(
