@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont-nav{
+    word-wrap: break-word;
+}
+
+.radio1{
+    list-style: none;
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+    word-wrap: break-word;
+}
+
+
+.radio2{
+    margin-left: 2.5%;
+}
+span{
+    color: red;
+}
+.pad{
+    padding: 1em;
+}
+.adj{
+    margin-left: 0;
+    background-color: lightgray;
+    border-radius: 8px;
+}
