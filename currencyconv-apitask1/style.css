@@ -1,11 +1,43 @@
-.container{
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
     text-align: center;
-}
-
-button{
+  }
+  
+  button {
     padding: 1em;
-}
-.buttons{
+  }
+  .buttons {
     text-align: center;
     padding: 2em;
-}
+  }
+  
+  .imgswap {
+    cursor: pointer;
+  }
+  
+  
+  
+  header {
+    text-align: center;
+    padding: 1em;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  @media (min-width:992px){
+    .countrynames {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    align-items: center;
+    position: relative;
+    word-wrap: break-word;
+  }
+  }
+  
