@@ -1,15 +1,15 @@
-function countryCode1(code1){
+function countryCode1(code1){  // function to get the first countrycode and to convert it into lowercase. 
     fetch("https://restcountries.eu/rest/v2/all",{
         method: "GET"
     })
     .then((data)=> data.json())
     .then((data)=>{
         data.forEach((elemnt)=>{
-            let countryName = document.querySelector("#country1").value
+            let countryName = document.querySelector("#country1").value;
             countryName = countryName.toLowerCase()
             if(countryName == elemnt.name.toLowerCase()){
                 code1 = elemnt.currencies[0].code;
-                code1 = code1.toLowerCase() 
+                code1 = code1.toLowerCase();
             }
         })
         return code1;
@@ -17,7 +17,7 @@ function countryCode1(code1){
     .then((data)=>baseCurrency(data))
 }
 
-function countryCode2(code2){
+function countryCode2(code2){ // function to get the second countrycode and to convert it  into lowercase.
     fetch("https://restcountries.eu/rest/v2/all",{
         method: "GET"
     })
@@ -34,13 +34,12 @@ function countryCode2(code2){
         return code2;
     })
     .then((data)=> {
-        localStorage.setItem("key", data)
+        localStorage.setItem("key", data) // storing the second country code to local storage
     })
 }
 
 function baseCurrency(foo){
-    //const ff = new URL("https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/"+foo+".json")
-    fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${foo}.json`, {
+    fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${foo}.json`, { // to get the currency values
         method: "GET"
     })
     .then((data) => data.json())
@@ -48,14 +47,24 @@ function baseCurrency(foo){
         return data[foo][localStorage.getItem("key")]
     })
     .then((data)=>{
-        return document.querySelector("#num1").value*data
+        return document.querySelector("#num1").value*data // returns the converted amount 
+    })
+    .then((data)=> {
+        return Math.fround(data)
     })
     .then((data)=> document.querySelector("#num2").value = data)
+    
 }
 
-function formReset(){
+function formReset(){ // function to reset the form
     document.querySelector("#country1").value = "";
     document.querySelector("#country2").value = "";
     document.querySelector("#num1").value = "";
     document.querySelector("#num2").value = "";
+}
+
+function swap(){ // function to swap between two countries
+    let temp = document.querySelector('#country1').value;
+    document.querySelector('#country1').value = document.querySelector('#country2').value;
+    document.querySelector('#country2').value = temp;
 }
