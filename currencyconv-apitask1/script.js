@@ -1,5 +1,5 @@
 function countryCode1(code1){  // function to get the first countrycode and to convert it into lowercase. 
-    fetch("https://restcountries.eu/rest/v2/all",{
+    fetch("https://restcountries.com/v2/all",{
         method: "GET"
     })
     .then((data)=> data.json())
@@ -18,7 +18,7 @@ function countryCode1(code1){  // function to get the first countrycode and to c
 }
 
 function countryCode2(code2){ // function to get the second countrycode and to convert it  into lowercase.
-    fetch("https://restcountries.eu/rest/v2/all",{
+    fetch("https://restcountries.com/v2/all",{
         method: "GET"
     })
     .then((data)=> data.json())
